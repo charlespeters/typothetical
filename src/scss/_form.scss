@@ -5,5 +5,44 @@
         padding: .5rem;
         border-radius: .25rem;
         border: 1px solid $gray-lite;
+        h3 {
+          letter-spacing: 2px;
+          font-size: 1.25rem;
+        }
+        form {
+          padding: .5rem;
+          input[type="radio"] {display:none;}
+          input[type="radio"] + label {
+            padding: .5rem;
+            border-radius: .375rem;
+            display:inline-block;
+            color: $med-blue;
+            border: 2px solid;
+            border-color: darken($med-blue, 25%);
+            margin: .25rem 0;
+          }
+          input[type="radio"]:checked + label {
+            color: white;
+            border-color: white;
+          }
+          input[type="radio"] + label span {
+            cursor:pointer;
+            width: 100%;
+            max-width: 9rem;
+            text-align: center;
+          }
+          input[type="radio"]:checked + label span { }
+        }
     }
+}
+
+
+.color--radio {
+  text-indent: -9999px;
+  width: 3rem;
+  height: 3rem;
+  &_yellow { background: $yellow; }
+  &_blue { background: $med-blue; }
+  &_red { background: $red; }
+  &_green { background: $green; }
 }

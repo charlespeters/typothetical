@@ -31,45 +31,69 @@
                   <form class="type--controls_family">
                     <h3 class="caps">Font</h3>
                     <select name="" id="#fontfamily">
-                        <option value="typo--proximanova" selected="selected">Proxima Nova</option>
-                        <option value="typo--sourcesanspro" selected="selected">Source Sans Pro</option>
-                        <option value="typo--freightsans">Freight Sans</option>
+                        <option value="typo--proximanova">Proxima Nova</option>
+                        <option value="typo--sourcesanspro">Source Sans Pro</option>
+                        <option selected="selected" value="typo--freightsans">Freight Sans</option>
+                        <option value="typo--helvetica">Helvetica Neue</option>
                         <option value="typo--chaparral">Chapparal</option>
                     </select>
                   </form>
-                  <form>
+                  <form id="colors--form">
                     <h3 class="caps">Heading Color</h3>
                     <input type="radio" checked="checked" name="title" value="Gray" id="gray">
-                    <label for="gray"><span>Gray</span></label>
+                    <label for="gray"class="color--radio color--radio_gray"><span>Gray</span></label>
 
                     <input type="radio" name="title" value="Green" id="green">
-                    <label for="green"><span>Green</span></label>
+                    <label for="green" class="color--radio color--radio_green"><span>Green</span></label>
 
                     <input type="radio" name="title" value="Red" id="red">
-                    <label for="red"><span>Red</span></label>
+                    <label for="red" class="color--radio color--radio_red"><span>Red</span></label>
 
                     <input type="radio" name="title" value="Blue" id="blue">
-                    <label for="blue"><span>Blue</span></label>
+                    <label for="blue" class="color--radio color--radio_blue"><span>Blue</span></label>
 
                     <input type="radio" name="title" value="Yellow" id="yellow">
-                    <label for="yellow"><span>Yellow</span></label>
+                    <label for="yellow"  class="color--radio color--radio_yellow"><span>Yellow</span></label>
                   </form>
-                  <form>
-                    <h3 class="caps">Block Quote</h3>
-                    <input type="radio" checked="checked" name="title" value="Style 1" id="style1">
-                    <label for="style1"><span>Style 1</span></label>
+                  <form id="caps--form" action="">
+                    <h3 class="caps">Headline Caps</h3>
+                    <input type="radio" checked="checked" name="title" value="Title Case" id="titlecase">
+                    <label for="titlecase"><span>Title Case</span></label>
 
-                    <input type="radio" name="title" value="Style 2" id="style2">
-                    <label for="style2"><span>Style 2</span></label>
+                    <input type="radio" name="title" value="All Caps" id="allcaps">
+                    <label for="allcaps"><span>All Caps</span></label>
+                  </form>
+                  <form id="blockquotes--form">
+                    <h3 class="caps">Block Quote</h3>
+                    <input type="radio" checked="checked" name="title" value="Style 1" id="block--1">
+                    <label for="block--1"><span>Style 1</span></label>
+
+                    <input type="radio" name="title" value="Style 2" id="block--2">
+                    <label for="block--2"><span>Style 2</span></label>
                   </form>
                 </div>
             </aside>
-            <section class="flex--wd type--article">
+            <section class="flex--wd type--article entry">
               <article id="typothetical--article">
                 <header>
-                    <h1>Lorem ipsum dolor</h1>
+                    <span class="instruction caps">Example Article</span>
+                    <h1>Searching For a Heart of Gold</h1>
+                    <span class="byline caps">by Charles Peters on September 29, 2014</span>
+                    <h2 class="subheading">If Neil Young ever dies, the world will be incredibly sad and we need to prepare ourselves. For Godsake, he's looked like an old man since 1973.</h2>
                 </header>
+                <section>
+                  <p>Neil Young is the best that ever came out of Canada. Arcade Fire is ranked at no. 2 and then gold medals. Actually, their major export is crude oil. Canada also has a space program. I just can't fogive them for Celion Dion</p>
+                  <h3>History of Neil Young</h3>
+                  <p>Young was born in 1945 (he's old) in Toronto (he's Canadian). Other things happened, he eventually picked up a guitar and probably other instruments. <em>Look, I am not a biographer, get off my freaking back.</em></p>
+                  <blockquote class="block--1">
+                    <p>On the shore lay Montezuma, with his coca leaves and pearls. In his halls he often wandered with the secrets of the worlds</p>
+                    <cite>"Cortez the Killer" Neil Young</cite>
+                  </blockquote>
 
+                  <p>Impedit repudiandae, mollitia dolores dicta omnis corporis in voluptatum quasi quam eum ducimus aut obcaecati debitis vitae soluta doloribus, voluptate, itaque optio, ipsam cumque veritatis magnam eius aliquid placeat! Voluptate.</p>
+                  <h3>Headline Level 3</h3>
+                  <p>Amet quaerat quasi velit perspiciatis, voluptatibus eum dolores sint consequatur nesciunt iure, aspernatur repellat voluptate cupiditate recusandae magni voluptates ut! Facilis eum doloribus, debitis dolore tempora? Perspiciatis et, nobis sequi!</p>
+                </section>
               </article>
             </section>
         </div>

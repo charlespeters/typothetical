@@ -1,6 +1,96 @@
 .type {
     &--article {
         background: $off-white;
-        padding: .5rem;
+        padding: 2rem 1rem;
+        article {
+          max-width: 42rem;
+          margin: 0 auto;
+        }
     }
+}
+
+.typo {
+  &--chaparral {
+    font-family: "chaparral-pro";
+    transition: all 375ms ease;
+  }
+  &--proximanova {
+    font-family: "proxima-nova";
+    transition: all 375ms ease;
+  }
+  &--freightsans {
+    font-family: "freight-sans-pro";
+    transition: all 375ms ease;
+  }
+  &--helvetica {
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    transition: all 375ms ease;
+  }
+  &--sourcesanspro {
+    font-family: "source-sans-pro";
+    transition: all 375ms ease;
+  }
+}
+
+.entry {
+  header {
+    margin-bottom: 1rem;
+    &::after {
+      content: "";
+      width: 6rem;
+      height: 3px;
+      background: $med-blue;
+      display: block;
+      margin: 1rem 0 0;
+    }
+  }
+  .gray {
+    transition: all 375ms linear;
+    color: $text;
+  }
+  .red {
+    transition: all 375ms linear;
+    color: $red;
+  }
+  .yellow {
+    transition: all 375ms linear;
+    color: $yellow;
+  }
+  .blue {
+    transition: all 375ms linear;
+    color: $med-blue;
+  }
+  .green {
+    transition: all 375ms linear;
+    color: $green;
+  }
+  h1 {
+    font-size: 2.25rem;
+    transition: all 375ms ease;
+  }
+  h3 {
+    transition: all 375ms ease;
+  }
+  .subheading {
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-top: .5rem;
+  }
+  .block--1 {
+    margin: 1rem 0;
+    color: $med-blue;
+    p {
+      font-style: italic;
+    }
+    cite {
+      width: 100%;
+      display: block;
+      text-align: right;
+    }
+  }
+  .block--2 {
+    background: tomato;
+  }
 }

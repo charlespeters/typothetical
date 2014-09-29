@@ -4,23 +4,28 @@
         background: white;
         padding: 2rem 1rem;
         &_logo {
-            flex: 1;
+            flex: 0 1 20rem;
             max-width: 30rem;
+            height: auto;
             svg {
                 fill: $pale-gold;
                 max-width: 100%;
+                max-height: 100%;
+                padding: 0 .5rem;
             }
-            h1 {
-                display: none;
-            }
+            h1 { display: none; }
         }
         &_nav {
-            flex: 4;
+            flex: 4 4 20rem;
             ul {
-                list-style: none;
-                text-align: right;
+                list-style: none inside;
                 li {
                     display: inline-block;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    font-size: 1.125rem;
+                    padding-right: 1rem;
+                    &:last-of-type { padding-right: 0; }
                 }
             }
         }

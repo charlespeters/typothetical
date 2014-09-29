@@ -17,11 +17,20 @@ $( ".type--controls_family select" )
   })
   .change();
 
+$('#blockquotes--form input[type="radio"]').on("click", function() {
+    $("blockquote")
+        .removeClass()
+        .attr( 'class', $(this).attr('id') );
+});
 
-// $(document).ready(function() {
-//     $('.controller input[type="radio"]').on("click", function() {
-//         $("svg")
-//             .removeClass()
-//             .attr( 'class', $(this).attr('id') );
-//     });
-// });
+$('#colors--form input[type="radio"]').on("click", function() {
+		$('.entry h1, .entry h3')
+				.removeClass()
+				.attr( 'class', $(this).attr('id') );
+});
+
+$('#caps--form input[type="radio"]').on("click", function() {
+		$('.entry h1, .entry h3')
+				.toggleClass('caps');
+				// .attr( 'class', $(this).attr('id') );
+});
