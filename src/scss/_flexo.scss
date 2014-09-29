@@ -1,0 +1,19 @@
+.flex {
+    &--container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 68rem;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &--sm {
+        flex: 0 1 20rem;
+        margin: .25rem;
+    }
+    &--wd {
+        flex: 4 4 20rem;
+        margin: .25rem;
+    }
+}

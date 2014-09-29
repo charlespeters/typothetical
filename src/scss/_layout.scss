@@ -1,0 +1,28 @@
+.app {
+    &--header {
+        width: 100%;
+        background: white;
+        padding: 2rem 1rem;
+        &_logo {
+            flex: 1;
+            max-width: 30rem;
+            svg {
+                fill: $pale-gold;
+                max-width: 100%;
+            }
+            h1 {
+                display: none;
+            }
+        }
+        &_nav {
+            flex: 4;
+            ul {
+                list-style: none;
+                text-align: right;
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
