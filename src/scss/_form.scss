@@ -9,18 +9,51 @@
           letter-spacing: 2px;
           font-size: 1.25rem;
         }
+        &_family {
+          .select {
+            margin: .25rem 0;
+            position: relative;
+            max-width: 12.5rem;
+            select {
+              width: 100%;
+            }
+            span {
+              position: absolute;
+              top: .375rem;
+              bottom: .375rem;
+              right: .5rem;
+            }
+          }
+        }
         form {
           padding: .5rem;
-          input[type="radio"] {display:none;}
-          input[type="radio"] + label {
+          svg {
+            width: 3rem;
+            height: 2.75rem;
+            margin: 0;
+            display: inline-block;
+          }
+          select {
+            font-family: "proxima-nova";
+            -webkit-appearance: none;
+            font-size: 1rem;
+            color: white;
+            background: $med-blue;
             padding: .5rem;
+            border-color: darken($med-blue, 25%);
+          }
+          input[type="radio"] { display:none; }
+          input[type="radio"] + label {
+            padding: 0 .5rem;
             border-radius: .375rem;
             display:inline-block;
             color: $med-blue;
+            fill: currentColor;
             border: 2px solid;
             border-color: darken($med-blue, 25%);
             margin: .25rem 0;
           }
+          i { display: none; }
           input[type="radio"]:checked + label {
             color: white;
             border-color: white;
@@ -28,8 +61,8 @@
           input[type="radio"] + label span {
             cursor:pointer;
             width: 100%;
-            max-width: 9rem;
-            text-align: center;
+/*             max-width: 9rem;
+height: 0; */
           }
           input[type="radio"]:checked + label span { }
         }

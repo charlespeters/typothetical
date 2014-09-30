@@ -91,6 +91,27 @@
     }
   }
   .block--2 {
-    background: tomato;
+    margin: 1rem 0;
+    position: relative;
+    color: $med-blue;
+    &::before {
+      content: "\201c";
+			display: block;
+			position: absolute;
+      top: -2rem;
+      left: -2rem;
+      color: rgba($med-blue, .375);
+      font-size: 5rem;
+    }
+    p {
+      font-weight: 700;
+    }
+    cite {
+      width: 100%;
+      display: block;
+      text-align: right;
+      font-style: normal;
+      font-size: 1.25rem;
+    }
   }
 }
